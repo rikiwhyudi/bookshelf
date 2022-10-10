@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf Apps</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1 class="card" style="display: flex; justify-content: center;  background-color: #5F30E2; padding: 45px; color: white;">BookShelf Apps</h1>
+  </header>
+    <div class="card header">
+        <button id="myBtn">+ Add Books</button>
+        <input type="text" placeholder="Search here..." id="searchBar">
+    </div>
+<div id="myModal" class="modal">
+<div class="modal-content">
+  <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Add new Books</h2>
+    </div>
+    <div class="modal-body">
+        <form class="form" action="#" id="form">
+            <div class="form-group form-title">
+              <label for="title">Judul:</label>
+              <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group form-title">
+              <label for="author">Penulis:</label>
+              <input type="text" id="author" name="author" required>
+            </div>
+            <div class="form-group form-title">
+              <label for="date">Tahun:</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group form-title" style="display: flex;">
+              <label>Tandai sudah dibaca:<input type="checkbox" id="checkbox" name="checkbox">
+              </label>
+            </div>
+            <div class="form-group submit-form">
+              <button type="submit" value="Submit" name="Submit" class="btn-submit">Submit</button>
+            </div>
+          </form>
+          <div class="modal-footer" style="display: flex; justify-content: center">
+            <h6>BookShelf Apps &copy; 2022</h6>
+          </div>
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <div class="card one">
+          <div class="title">
+            <h2>Belum dibaca</h2>
+          </div>
+          <div class="list-item" id="e-books">
+          </div>
+        </div>
+        <div class="card two">
+          <div class="title">
+            <h2>Sudah dibaca</h2>
+          </div>
+          <div class="list-item" id="completed-todos">
+          </div>
+        </div>
+        <div class="profile card">
+          <div class="title">
+              <h2>Profile</h2>
+          </div>
+          <div class="img">
+            <h3>Riki Wahyudi</h3>
+            <img src="./assets/riki-w.jpg" alt="profile">
+            <h4>Beginner at Dicoding academy</h4>
+          </div>
+      </div>
+      </div> 
+      <script src="./script.js"></script>
+</body>
+</html>
